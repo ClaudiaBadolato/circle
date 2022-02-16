@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById("red").onclick = function(){
+               document.getElementById("red").style.display = "none";    
+        }
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const yellow = document.getElementById("yellow");
+            if (yellow) {
+                yellow.onclick = function(){
+                yellow.style.display = "none";
+            }
+        }
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const blue = document.getElementById("blue");
+            if (blue) {
+                blue.onclick = function(){
+                blue.style.display = "none";
+            }
+        }
+        });
+        
+    </script>
+</head>
+<body>
+    <div class="general">
+    <div class="circle" id="red"></div>
+    <div class="circle" id="yellow"></div>
+    <div class="circle" id="blue"></div>
+</div>
+    
+</body>
+</html>
+
